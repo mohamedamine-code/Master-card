@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #121321;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+section::before{
+    content:" ";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    transform: translate(-150px,-100px);
+}
+
+section::after{
+    content:" ";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,#9c27b0,#f3f5f5);
+    transform: translate(150px,100px);
+}
+.container {
+    position: relative;
+    height: 235px;
+    width: 481px;
+    z-index: 100;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.container .card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+    border-radius: 25px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.1);
+    backface-visibility: hidden;
+    
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+.font-face .logo{
+    display:flex;
+    align-items: center;
+}
+.font-face .logo img{
+    width: 100px;
+    height: 100%;
+
+}
+.font-face .logo h5{
+    font-size: 16px;
+    font-weight: 400;
+    color:#f3f5f5;
+}
+.font-face header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.font-face header img{
+    width: 45px;
+    height: 45px;
+    margin: 10px ;
+    
+}
+.font-face header .logo{
+    margin-right: 0;
+}
+.section-home{
+    padding-left: 9%;
+    color: #f3f5f5;
+    height: 60%;
+}
+.section-home h5{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom:5px;
+}
+.section-home .num{
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom:20px;
+}
+.section-home .name-time{
+    display: flex;
+    justify-content: space-between;
+}
+.name-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name-time h5{
+    font-size: 22px;
+    font-weight: 200;
+}
+.name-time .time{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+}
+.time h4{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/* back card*/
+
+.back-face{
+    color: #f3f5f5;
+    transform: rotateY(180deg);
+}
+.back-face .customer {
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 11px;
+    width: 100%;
+    margin-bottom: 9px;
+}
+.back-face .block{
+    width: 100%;
+    height: 47px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.number h1{
+    /**/
+    display: flex;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #121321;
+    background-color: #f3f5f5;
+    width: 290px;
+    margin-left: 20%;
+    border-radius: 5px;
+    padding-top: 3px;
+}
+.number p{
+    font-size: 12px;
+    padding: 10px 10px 10px 30px;
+}
